@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+// @import '~css-star-rating/css/star-rating.min.css';
+html,
+body,
+header,
+.jarallax {
+    height: 100%;
+    width:  100%;
+}
+.empty-box{
+    height: 40%;
+}
+.img {
+    max-width: 100%;
+    height: auto;
+  }
+@media (min-width: 560px) and (max-width: 740px) {
+    html,
+    body,
+    header,
+    .jarallax {
+        height: 600px;
+    }
+}
+ 
+.celestial-heading{
+    padding-top: 2%;
+}
+.desc{
+    color: #8b949d;
+    font-size: larger;
+}
+
+h2 {
+    color: #00B6EC;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }

@@ -1,0 +1,50 @@
+  
+
+
+ 
+  /* Image Styling */
+  img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+   
+
+  /* Flexbox Styling */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .col-md-6 {
+    padding: 10px;
+  }
+
+  /* Surf Coaching Method Styling */
+  .surf-method {
+    margin-top: 40px;
+  }
+
+  .surf-method .lesson {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .surf-method .lesson h4 {
+    color: #0078B6;
+    font-weight: bold;
+  }
+
+  .surf-method .desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+ 
+ 

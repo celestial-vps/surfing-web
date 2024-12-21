@@ -1,0 +1,43 @@
+<div class="empty-box"></div>
+  
+<div class="fab-container">
+<!-- <button class="fab" onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';">
+  <fa-icon [icon]="faWhatsapp"></fa-icon> 
+</button> -->
+<button class="fab" (click)="redirectToWhatsApp()">
+    <fa-icon [icon]="faWhatsapp"></fa-icon>
+  </button>
+</div>
+<!-- Header Section -->
+<div class="header-background">
+  <div class="header-overlay"></div>
+  <div class="header-content">
+      <h1>Welcome to Learn Surfing Bali</h1>
+      <p>Join us to experience Bali's best surfing spots with professional instructors.</p>
+      <button class="cta-button" onclick="window.location.href='https://wa.me/6282247153069?text=Hello'">
+          Book Your Surfing Experience
+      </button>
+  </div>
+</div>
+ 
+<div class="container text-md my-5">
+  <div class="row justify-content-between align-items-center">
+      <div class="col-12 col-md-6">
+          <h2 class="mb-4 text-uppercase">Welcome to Learn Surfing Bali</h2>
+          <p>Where Bali is the paradise for surfers all over the world. We share our regular experiences to learn how to surf. Available for beginners, intermediate, and advanced levels, as well as our safari surf program for experienced surfers. Bali has a wonderful season for surfing year-round. Join us and discover Bali's greatest surfing spots!</p>
+      </div>
+      <div class="col-12 col-md-6 text-center">
+          <img src="../../assets/surfing_photo.png" alt="surfing in bali" class="img-fluid rounded">
+      </div>
+  </div>
+</div>
+
+<div class="container text-md  bg-light pt-5 pb-4 text-center image-container" style="height: 70vh;">
+    <img ngSrc="../../assets/Bali-learn-to-surf.png" alt="surfing in bali" fill> 
+    <div class="text-overlay">
+        <h2>LEARN WITH US!</h2>
+        <p class="h4-text">Will make your surfing experiences more spectacular and full of fun.<br>
+            Guaranteed to stand first lesson! 1 Instructor maximum 3 person</p>
+    </div>
+</div>
+<app-comment></app-comment>    
