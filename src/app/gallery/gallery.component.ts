@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'app-gallery',
-    standalone: true,
-    imports: [CommonModule, NgOptimizedImage],
-    templateUrl: './gallery.component.html',
-    styleUrl: './gallery.component.scss'
+  selector: 'app-gallery',
+  standalone: true,
+  imports: [CommonModule,NgOptimizedImage],
+  templateUrl: './gallery.component.html',
+  styleUrl: './gallery.component.scss'
 })
 export class GalleryComponent {
   constructor(private meta: Meta, private titleService: Title) {}

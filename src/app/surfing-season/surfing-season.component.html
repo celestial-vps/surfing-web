@@ -1,70 +1,84 @@
-
-<!-- <div class="section-padding"> -->
+<div style="padding: 0% 8% 0% 8%">
   <div class="celestial-heading">
-    <h2>SURF SESSION</h2>
-<!-- </div> -->
+    <h2 style="text-align: center">SURF SESSION</h2>
+  </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="box" style="display: flex; justify-content: center">
+  <div class="row" style="padding: 2% 0% 0% 0%">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div
+        *ngIf="showImage"
+        [@myAnimationLeft]
+        class="box"
+        style="display: flex; justify-content: center"
+      >
         <img
-          src="../../assets/morning.png"
+          ngSrc="../../assets/morning.png"
           width="350"
           height="400"
-          alt="Morning Session"
+          alt="morning"
         />
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="box">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div *ngIf="showImage" [@myAnimationRight] class="box">
         <strong>MORNING SESSION</strong>
-        <h3 class="price">IDR 650.000 per person</h3>
+        <h3 style="font-weight: 700;" >IDR 650.000 per person</h3>
         <p>Sunrise or late morning depend on tide conditions.</p>
+        1. Free pick up service area :
         <ul class="list_check">
           <li>Canggu</li>
           <li>Kuta</li>
-          <li>Jimbaran</li>
+          <li>Jimbaran.</li>
           <li>Nusa Dua</li>
           <li>Uluwatu</li>
           <li>Sanur</li>
         </ul>
-        <p>2. Free Mineral Water. <br>3. Surf Board</p>
-        <button type="button" class="btn btn-primary"
-        onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';"
-        >BOOK NOW!</button>
+        <p style="color: #000">2. Free Mineral Water. <br />3. Surf Board</p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';"
+        >
+          BOOK NOW!
+        </button>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="box" style="display: flex; justify-content: center">
+  <div class="row" style="padding: 2% 0% 0% 0%">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div
+        *ngIf="showImage"
+        [@myAnimationRight]
+        style="display: flex; justify-content: center"
+      >
         <img
-          src="../../assets/afternon.png"
+          ngSrc="../../assets/afternon.png"
           width="350"
           height="400"
-          alt="Afternoon Session"
+          alt="morning"
         />
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="box">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div *ngIf="showImage" [@myAnimationLeft]>
         <strong>AFTERNOON SESSION</strong>
-        <h3 class="price">IDR 550.000 per person</h3>
+        <h3 style="font-weight: 700;">IDR 550.000 per person</h3>
         <p>Sunrise or late morning depend on tide conditions.</p>
+        1. Free pick up service area :
         <ul class="list_check">
           <li>Canggu</li>
           <li>Kuta</li>
-          <li>Jimbaran</li>
+          <li>Jimbaran.</li>
           <li>Nusa Dua</li>
           <li>Uluwatu</li>
           <li>Sanur</li>
         </ul>
-        <p>2. Free Mineral Water. <br>3. Surf Board</p>
+        <p style="color: #000">2. Free Mineral Water. <br />3. Surf Board</p>
         <button
           type="button"
           class="btn btn-primary"
-          onclick="window.location.href='https://wa.me/6282247153069?text=Hello%20there%20I%20Want%20to%20Book%20Afternoon%20Session!'"
+          onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20afternon%20Season!';"
         >
           BOOK NOW!
         </button>
@@ -89,7 +103,19 @@
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong>The best time of year to surf in Bali</strong><br/>Bali offers year-round surfing opportunities, but there are certain times of the year when the conditions are more favorable for catching epic waves. Whether you are a seasoned pro or a beginner looking to improve your skills, timing your surf trip to Bali is crucial for scoring great waves. Let's explore the two main seasons in Bali and their impact on surfing.<br/><br/>
+                <strong>The dry season (April to October) and its impact on surfing</strong><br/>The dry season, which runs from April to October, is considered the peak time for surfing in Bali. During these months, the island experiences consistent swells generated by storms in the southern hemisphere. This creates powerful waves that attract surfers from around the world.
+
+                The dry season is characterized by offshore winds, which blow from the land towards the ocean. These winds groom the waves, creating clean and well-shaped barrels that are a delight for experienced surfers. The combination of powerful swells and offshore winds during the dry season makes Bali's famous surf breaks, such as Uluwatu, Padang Padang, and Canggu, come alive.
+                
+                The water temperature during the dry season is warm and inviting, ranging from 25 to 29 degrees Celsius (77 to 84 degrees Fahrenheit). This makes it comfortable to surf in boardshorts or a bikini, without the need for a wetsuit.<br/><br/>
+                <strong>The wet season (November to March) and its impact on surfing</strong><br/>The wet season, which spans from November to March, brings rain and slightly cooler temperatures to Bali. While the wet season is traditionally considered the offseason for surfing in Bali, it still offers great opportunities for surfers, especially beginners and intermediate riders.
+
+                During the wet season, the swells are generally smaller compared to the dry season, making it a more suitable time for beginners to practice their skills. The waves are usually gentler and less powerful, providing a less intimidating environment for those who are learning to surf.
+                
+                Despite the increased rainfall, Bali's surf spots still deliver good conditions for surfing during the wet season. The water temperature remains warm, ranging from 25 to 27 degrees Celsius (77 to 81 degrees Fahrenheit), making it comfortable to surf in boardshorts or a thin wetsuit.
+                
+                The wet season also brings fewer crowds to Bali's surf breaks, as many surfers choose to visit during the dry season when the waves are at their peak. This means you'll have more space and less competition in the lineup, allowing you to enjoy the waves at your own pace.<br/>                
             </div>
         </div>
     </div>
@@ -97,13 +123,17 @@
         <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Is it safe to surf in Bali
+                Tips for planning a surf trip to Bali
             </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong>1. Research the optimal time to visit</strong><br/>As discussed earlier, the best time to surf in Bali depends on your skill level and preferences. If you're an experienced surfer seeking powerful waves, the dry season from April to October is the ideal time to visit. On the other hand, if you prefer smaller and less crowded waves, the wet season from November to March might be more suitable for you. Researching the optimal time to visit will help you plan your trip accordingly.<br/><br/>
+                <strong>2. Book accommodation near surf breaks</strong><br/>To maximize your time in the water, it is advisable to book accommodation near the surf breaks you plan to visit. This will save you valuable travel time and allow you to make the most of the optimal surf conditions. Bali offers a wide range of accommodation options, from budget-friendly guesthouses to luxurious beachfront resorts. Choose a location that suits your budget and preferences, and ensure it provides easy access to your desired surf spots.<br/><br/>
+                <strong>3. Rent or bring your own surfboard</strong><br/>If you're traveling to Bali without your own surfboard, don't worry. The island is well-equipped with surf shops and rental outlets offering a wide range of surfboards to suit different skill levels and wave conditions. However, if you have a favorite board that you're comfortable surfing on, consider bringing it along to ensure a familiar riding experience. Just make sure to check the airline's baggage policies and fees for transporting surfboard<br/><br/>
+                <strong>4. Learn from local surf schools and instructors</strong><br/>Bali is home to numerous surf schools and experienced instructors who can help you improve your surfing skills. Whether you're a beginner looking to catch your first wave or an intermediate surfer seeking to refine your technique, taking lessons from local professionals can greatly enhance your surfing experience. These instructors have in-depth knowledge of Bali's surf breaks and can provide valuable insights and guidance to help you progress.<br/><br/>
+                <strong>5. Respect safety precautions and surf etiquette</strong><br/>Safety should always be a top priority when surfing in Bali. Familiarize yourself with the local surf conditions and potential hazards, such as reef breaks and strong currents. Always surf within your skill level and be aware of your surroundings. Additionally, respect the local surf etiquette, which includes taking turns, not dropping in on other surfers, and maintaining a friendly and respectful attitude in the water. By adhering to these safety precautions and surf etiquette, you'll not only stay safe but also contribute to a positive and enjoyable surf experience for everyone.
             </div>
         </div>
     </div>
@@ -111,30 +141,23 @@
         <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Where should I surf in Bali if its to big
+                Popular surf spots in Bali
             </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong>1. Uluwatu</strong><br/>Uluwatu is one of Bali's most iconic surf breaks, renowned for its challenging waves and stunning cliff-top views. This world-class reef break offers long rides and powerful barrels, attracting experienced surfers from around the globe. Uluwatu is best surfed at mid to high tide, and it is advisable to bring your A-game as the waves can be fast and hollow.<br/><br/>
+                <strong>2. Padang Padang</strong><br/>Padang Padang is a picturesque reef break located on the Bukit Peninsula. It is famous for its long, barreling left-hand waves that break over a shallow reef. This spot is not for the faint-hearted, as it requires skill and confidence to navigate the fast and powerful waves. Padang Padang works best at mid to high tide and is a favorite among advanced surfers.<br/><br/>
+                <strong>3. Canggu</strong><br/>Canggu is a vibrant surf town with a variety of breaks suitable for all skill levels. The main break at Canggu Beach offers long and mellow rides, making it ideal for beginners and intermediate surfers. Batu Bolong and Echo Beach are also popular surf spots in Canggu, offering a mix of left and right-hand waves. Canggu works well at both high and low tide, providing consistent waves throughout the day.<br/><br/>
+                <strong>4. Kuta</strong><br/>Kuta is the birthplace of surfing in Bali and remains a popular spot for beginners and intermediate surfers. The beach break at Kuta offers forgiving waves, making it an excellent place to learn and practice your skills. Kuta works best at mid to high tide, providing consistent waves suitable for surfers of all levels.
+
+                These are just a few of the many surf spots that Bali has to offer. Exploring the island will unveil a treasure trove of waves, each with its own unique characteristics and challenges. Whether you're a thrill-seeker chasing big barrels or a beginner looking for mellow rides, Bali's surf spots have something to offer every wave enthusiast.
+
             </div>
         </div>
     </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                Where should I rent a board
-            </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </div>
-        </div>
-    </div>
+    
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingFive">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -167,7 +190,48 @@
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSiz"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <strong>Flight options to Bali</strong><br/>Bali is well-connected to major cities around the world, making it easy to reach this tropical paradise. The Ngurah Rai International Airport, located in Denpasar, is the main gateway to Bali.
+
+                Numerous airlines offer direct flights to Bali from various international destinations. From major cities such as Singapore, Kuala Lumpur, Bangkok, Sydney, and Tokyo, you can find direct flights that will take you straight to Bali. The duration of the flight will depend on your departure point, but it typically ranges from 2 to 9 hours.
+                
+                If you're traveling from Europe or the Americas, you may need to make a stopover in a connecting city. Popular stopover destinations include Dubai, Doha, Hong Kong, and Singapore. While this may add some travel time, it can also be an opportunity to explore another city along the way.
+                
+                When booking your flight to Bali, consider factors such as cost, travel time, and convenience. Keep in mind that prices may vary depending on the season and how far in advance you book. It's always a good idea to compare different airlines and check for any special offers or promotions.
+                
+                Once you arrive at Ngurah Rai International Airport, you'll be greeted with warm Balinese hospitality and can easily arrange transportation to your desired destination on the island.<br/><br/>
+                <strong>Transportation options in Bali</strong><br/>Once you've arrived in Bali, you'll find a variety of transportation options to help you explore the island. From taxis to private drivers, motorbikes to bicycles, getting around Bali is relatively easy and convenient.
+
+                Taxis are readily available in tourist areas and can be hailed on the street or booked through ride-hailing apps. Make sure to use reputable taxi companies or apps to avoid scams or overcharging. It's also a good idea to ask the driver to use the meter or agree on a fixed price before starting the journey.
+                
+                For a more flexible and personalized experience, you can hire a private driver. This option allows you to have a dedicated driver who can take you to various attractions and wait for you while you explore. It's a great way to see Bali at your own pace and have the convenience of door-to-door service.
+                
+                If you're feeling adventurous, you can rent a motorbike or scooter. Bali's traffic can be quite chaotic, especially in busy areas, so make sure you're comfortable with riding a motorbike before choosing this option. Always wear a helmet, follow traffic rules, and be cautious on the road.
+                
+                Another popular transportation option in Bali is bicycles. Many areas in Bali, especially Ubud, offer bicycle rentals for travelers who want to explore at a more leisurely pace. It's a great way to immerse yourself in the local culture, enjoy the scenic views, and navigate through narrow streets that may not be accessible to cars.
+                
+                Whatever mode of transportation you choose, be sure to plan your routes in advance, especially if you're visiting multiple destinations in Bali. Traffic can be heavy at times, so it's best to allow some extra time for travel.<br/><br/>
+
+                <strong>Visa requirements for Bali</strong><br/>Before traveling to Bali, it's important to check the visa requirements for your country of residence. Fortunately, many countries are eligible for visa-free entry or visa on arrival, making it easier for tourists to visit Bali.
+
+                Visitors from certain countries, including the United States, Canada, the United Kingdom, Australia, and most European countries, are granted a visa-free entry for up to 30 days. This means you can stay in Bali for a maximum of 30 days without the need for a visa.
+                
+                For visitors who wish to stay longer than 30 days, a visa extension can be obtained. This can be done at the immigration office in Bali or through a visa agent. It's important to start the extension process before your initial visa expires to avoid any penalties or overstaying.
+                
+                If your country is not eligible for visa-free entry, you can apply for a visa on arrival. This can be done at the airport upon arrival and allows you to stay in Bali for up to 30 days. The visa on arrival can be extended for an additional 30 days.
+                
+                It's always recommended to check the latest visa requirements and regulations before traveling to Bali as they can change from time to time. The official website of the Indonesian Embassy or Consulate in your country is a reliable source of information.<br/><br/>
+                <strong>Accommodation options in Bali</strong><br/>Bali offers a wide range of accommodation options to suit every budget and preference. Whether you're looking for luxurious resorts, boutique hotels, budget guesthouses, or private villas, you'll find plenty of choices in Bali.
+
+                The southern part of Bali, particularly areas like Kuta, Seminyak, and Nusa Dua, is known for its upscale resorts and beachfront properties. These areas offer a mix of modern amenities, stunning views, and easy access to the beach. You can indulge in spa treatments, enjoy fine dining experiences, and relax by the pool with a cocktail in hand.
+                
+                Ubud, on the other hand, is famous for its tranquil retreats and boutique hotels nestled amidst lush greenery and rice terraces. Here, you can find unique accommodations that blend traditional Balinese architecture with modern comforts. Wake up to the sounds of nature, practice yoga overlooking the jungle, or take a dip in a private infinity pool.
+                
+                For budget travelers, Bali has a wide range of guesthouses, hostels, and homestays that offer affordable yet comfortable accommodations. These options can be found in popular tourist areas as well as off-the-beaten-path locations, allowing you to experience the local culture and hospitality.
+                
+                If you're traveling with a group or seeking privacy, renting a private villa can be a great option. Bali is known for its stunning villas with private pools, lush gardens, and personalized services. This allows you to enjoy the ultimate luxury and privacy while immersing yourself in the island's beauty.
+                
+                When choosing your accommodation in Bali, consider factors such as location, facilities, and proximity to attractions or activities you plan to engage in. It's also a good idea to read reviews and check the property's website for any special offers or promotions.<br/>
+                
             </div>
         </div>
     </div>
