@@ -1,70 +1,84 @@
-
-<!-- <div class="section-padding"> -->
+<div style="padding: 0% 8% 0% 8%">
   <div class="celestial-heading">
-    <h2>SURF SESSION</h2>
-<!-- </div> -->
+    <h2 style="text-align: center">SURF SESSION</h2>
+  </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="box" style="display: flex; justify-content: center">
+  <div class="row" style="padding: 2% 0% 0% 0%">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div
+        *ngIf="showImage"
+        [@myAnimationLeft]
+        class="box"
+        style="display: flex; justify-content: center"
+      >
         <img
-          src="../../assets/morning.png"
+          ngSrc="../../assets/morning.png"
           width="350"
           height="400"
-          alt="Morning Session"
+          alt="morning"
         />
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="box">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div *ngIf="showImage" [@myAnimationRight] class="box">
         <strong>MORNING SESSION</strong>
-        <h3 class="price">IDR 650.000 per person</h3>
+        <h3 style="color: #2dfff3">IDR 650.000 per person</h3>
         <p>Sunrise or late morning depend on tide conditions.</p>
+        1. Free pick up service area :
         <ul class="list_check">
           <li>Canggu</li>
           <li>Kuta</li>
-          <li>Jimbaran</li>
+          <li>Jimbaran.</li>
           <li>Nusa Dua</li>
           <li>Uluwatu</li>
           <li>Sanur</li>
         </ul>
-        <p>2. Free Mineral Water. <br>3. Surf Board</p>
-        <button type="button" class="btn btn-primary"
-        onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';"
-        >BOOK NOW!</button>
+        <p style="color: #000">2. Free Mineral Water. <br />3. Surf Board</p>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';"
+        >
+          BOOK NOW!
+        </button>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="box" style="display: flex; justify-content: center">
+  <div class="row" style="padding: 2% 0% 0% 0%">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div
+        *ngIf="showImage"
+        [@myAnimationRight]
+        style="display: flex; justify-content: center"
+      >
         <img
-          src="../../assets/afternon.png"
+          ngSrc="../../assets/afternon.png"
           width="350"
           height="400"
-          alt="Afternoon Session"
+          alt="morning"
         />
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="box">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div *ngIf="showImage" [@myAnimationLeft]>
         <strong>AFTERNOON SESSION</strong>
-        <h3 class="price">IDR 550.000 per person</h3>
+        <h3 style="color: #2dfff3">IDR 550.000 per person</h3>
         <p>Sunrise or late morning depend on tide conditions.</p>
+        1. Free pick up service area :
         <ul class="list_check">
           <li>Canggu</li>
           <li>Kuta</li>
-          <li>Jimbaran</li>
+          <li>Jimbaran.</li>
           <li>Nusa Dua</li>
           <li>Uluwatu</li>
           <li>Sanur</li>
         </ul>
-        <p>2. Free Mineral Water. <br>3. Surf Board</p>
+        <p style="color: #000">2. Free Mineral Water. <br />3. Surf Board</p>
         <button
           type="button"
           class="btn btn-primary"
-          onclick="window.location.href='https://wa.me/6282247153069?text=Hello%20there%20I%20Want%20to%20Book%20Afternoon%20Session!'"
+          onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20afternon%20Season!';"
         >
           BOOK NOW!
         </button>

@@ -1,69 +1,61 @@
-<!-- Comment Section -->
-<div class="container my-5">
-    <h3 class="text-center mb-4">Leave Your Comment</h3>
-
-    <div class="mb-3">
-        <label for="name" class="form-label">Your Name</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="newCommentAuthor" placeholder="Enter your name">
-    </div>
-    <div class="mb-3">
-        <label for="comment" class="form-label">Country</label>
-        <input type="text" class="form-control" id="country" [(ngModel)]="newCountry" placeholder="Leave your country">
+<div class="testimonial">
+    <div class="testimonial-heading">
+        <span>Comments</span>
+        <h1>Clients Says</h1>
     </div>
 
-    <!-- Rating stars -->
-    <div class="rating" (mouseleave)="resetRating()">
-        <span *ngFor="let star of stars; let i = index" (click)="setRating(i+1)" (mouseenter)="setHoverRating(i+1)"
-            [ngClass]="{'selected': i < newRatting, 'hover': i < hoverRating}">
-            &#9733;
-        </span>
-    </div>
-
-
-    <div class="mb-3">
-        <label for="comment" class="form-label">Your Comment</label>
-        <textarea class="form-control" id="comment" [(ngModel)]="newCommentText" rows="4"
-            placeholder="Leave your comment here"></textarea>
-    </div>
-    <button class="btn btn-primary" (click)="addComment()">Submit </button>
-
-</div>
-<!-- Testimonials Section -->
-<div class="container my-5">
-    <h3 class="text-center mb-4">What Our Clients Say</h3>
-    <div class="testimonial-box-container d-flex flex-wrap justify-content-center">
-        <!-- Loop through the testimonials array -->
-        <div *ngFor="let testimonial of testimonials" class="testimonial-box border rounded p-4 m-3"
-            style="max-width: 350px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);">
-            <div class="box-top d-flex align-items-center mb-3">
-                <div class="profile d-flex align-items-center">
-                    <div class="profile-img me-3">
-                        <img src="../../assets/profile.png" width="60" height="60" alt="client profile"
-                            class="rounded-circle">
+    <div class="testimonial-box-container">
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img ngSrc="../../assets/download.jpeg" width="350"
+                        height="400" alt="holy surf bali"/>
                     </div>
                     <div class="name-user">
-                        <strong>{{ testimonial.author }}</strong>
-                        <span class="d-block text-muted">{{ testimonial.country }}</span>
+                        <strong>Wesly Aioria</strong>
+                        <span>back packer</span>
                     </div>
+                </div>                       
+                <app-start [rating]="5"></app-start>                       
+                <div class="review">
                 </div>
             </div>
-            <div class="review mb-3">
-                <!-- Star Rating -->
-                <span class="text-warning">
-                    <!-- Render Filled Stars -->
-                    <ng-container *ngFor="let star of [].constructor(testimonial.rating); let i = index">
-                        &#9733; <!-- Filled star -->
-                    </ng-container>
-                
-                    <!-- Render Empty Stars -->
-                    <ng-container *ngFor="let star of [].constructor(5 - testimonial.rating); let i = index">
-                        &#9734; <!-- Empty star -->
-                    </ng-container>
-                </span>
+            <div class="client-comment">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+        </div>
+        <div class="testimonial-box">
+            <div class="box-top">
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="../../assets/download.jpeg" width="50"
+                        height="50" alt="holy surf bali"/>
+                    </div>
+                    <div class="name-user">
+                        <strong>Wesly Aioria</strong>
+                        <span>back packer</span>
+                    </div>
+                </div>                
+                <app-start [rating]="4"></app-start>             
+                <div class="review">
+                </div>
             </div>
             <div class="client-comment">
-                <p>{{ testimonial.text }}</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
+
         </div>
     </div>
 </div>
