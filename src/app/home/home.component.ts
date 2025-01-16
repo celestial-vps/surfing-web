@@ -28,8 +28,19 @@ export class HomeComponent {
   }
   
   ngOnInit() {
-    this.titleService.setTitle('Home');
-    this.meta.updateTag({ name: 'description', content: 'LEARN SURFING BALI' });
+    // this.titleService.setTitle('Home');
+    // this.meta.updateTag({ name: 'description', content: 'LEARN SURFING BALI' });
+    this.titleService.setTitle("Learn Surfing in Bali - Best Surf Lessons in Bali");
+
+    this.meta.updateTag({
+      name: 'description',
+      content: 'Find out the best beaches, surf schools, and prices for learning to surf in Bali. Start your surfing journey today!'
+    });
+
+    this.meta.updateTag({
+      name: 'keywords',
+      content: 'learn surfing in Bali, best place to learn surfing in Bali, surfing lessons in Bali, beginner surfing Bali'
+    });
   }
 
   // addData() {

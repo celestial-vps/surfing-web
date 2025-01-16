@@ -1,43 +1,131 @@
 <div class="empty-box"></div>
-  
+
 <div class="fab-container">
-<!-- <button class="fab" onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';">
+  <!-- <button class="fab" onclick="window.location.href = 'https://wa.me/6282247153069?text=Hello%20there%20I%20Wont%20Order%20Morning%20Season!';">
   <fa-icon [icon]="faWhatsapp"></fa-icon> 
 </button> -->
-<button class="fab" (click)="redirectToWhatsApp()">
+  <button class="fab" (click)="redirectToWhatsApp()">
     <fa-icon [icon]="faWhatsapp"></fa-icon>
   </button>
 </div>
 <!-- Header Section -->
-<div class="header-background">
-  <div class="header-overlay"></div>
-  <div class="header-content">
-      <h1>Welcome to Learn Surfing Bali</h1>
-      <p>Join us to experience Bali's best surfing spots with professional instructors.</p>
-      <button class="cta-button" onclick="window.location.href='https://wa.me/6282247153069?text=Hello'">
-          Book Your Surfing Experience
-      </button>
+<!-- Carousel Container -->
+<div id="headerCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carousel Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+      aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+    <button type="button" data-bs-target="#headerCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
   </div>
+
+  <!-- Carousel Inner -->
+  <div class="carousel-inner">
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="header-background header-background-slide-01">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Welcome to Holy Surf Bali</h1>
+          <p>Join us to experience Bali's best surfing spots with professional instructors.</p>
+          <button class="cta-button" onclick="redirectToWhatsApp()">Book Your Surfing Experience</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="header-background header-background-slide-02">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Discover New Waves</h1>
+          <p>Explore Bali’s hidden beaches and surf spots with our expert team.</p>
+          <button class="cta-button" onclick="redirectToWhatsApp()">Book Your Surfing Experience</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="header-background header-background-slide-03">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Learn from the Best</h1>
+          <p>Our professional instructors are here to guide you through every wave.</p>
+          <button class="cta-button" onclick="redirectToWhatsApp()">Book Your Surfing Experience</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="header-background header-background-slide-04">
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Catch Your First Wave</h1>
+          <p>Experience the thrill of surfing for the first time with our supportive team.</p>
+          <button class="cta-button" onclick="redirectToWhatsApp()">Book Your Surfing Experience</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Slide with Video Background -->
+    <div class="carousel-item">
+      <div class="header-background">
+        <video class="background-video" autoplay loop muted>
+          <source src="../../assets/slider9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+          <h1>Feel the Ocean</h1>
+          <p>Immerse yourself in the serene beauty of Bali's coastline.</p>
+          <button class="cta-button" onclick="redirectToWhatsApp()">Book Your Surfing Experience</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
- 
+
+
 <div class="container text-md my-5">
   <div class="row justify-content-between align-items-center">
-      <div class="col-12 col-md-6">
-          <h2 class="mb-4 text-uppercase">Welcome to Learn Surfing Bali</h2>
-          <p>Where Bali is the paradise for surfers all over the world. We share our regular experiences to learn how to surf. Available for beginners, intermediate, and advanced levels, as well as our safari surf program for experienced surfers. Bali has a wonderful season for surfing year-round. Join us and discover Bali's greatest surfing spots!</p>
-      </div>
-      <div class="col-12 col-md-6 text-center">
+    <div class="col-12 col-md-12">
+      <h2 class="mb-4 text-uppercase">Welcome to Holy Surf Bali</h2>
+      <p>Where Bali is the paradise for surfers all over the world. We share our regular experiences to learn how to
+        surf. Available for beginners, intermediate, and advanced levels, as well as our safari surf program for
+        experienced surfers. Bali has a wonderful season for surfing year-round. Join us and discover Bali's greatest
+        surfing spots!</p>
+    </div>
+    <!-- <div class="col-12 col-md-6 text-center">
           <img src="../../assets/surfing_photo.png" alt="surfing in bali" class="img-fluid rounded">
-      </div>
+      </div> -->
   </div>
 </div>
 
 <div class="container text-md  bg-light pt-5 pb-4 text-center image-container" style="height: 70vh;">
-    <img ngSrc="../../assets/Bali-learn-to-surf.png" alt="surfing in bali" fill> 
-    <div class="text-overlay">
-        <h2>LEARN WITH US!</h2>
-        <p class="h4-text">Will make your surfing experiences more spectacular and full of fun.<br>
-            Guaranteed to stand first lesson! 1 Instructor maximum 3 person</p>
-    </div>
+  <img ngSrc="../../assets/Bali-learn-to-surf.png" alt="surfing in bali" fill>
+  <div class="text-overlay">
+    <h2>LEARN WITH US!</h2>
+    <p class="h4-text">Will make your surfing experiences more spectacular and full of fun.<br>
+      Guaranteed to stand first lesson! 1 Instructor maximum 2 person</p>
+  </div>
 </div>
-<app-comment></app-comment>    
+<app-comment></app-comment>

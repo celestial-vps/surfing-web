@@ -7,12 +7,12 @@ import { SurfingSeasonComponent } from './surfing-season/surfing-season.componen
 import { OrderComponent } from './order/order.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // { path: '', redirectTo: '/', pathMatch: 'full' },
   {
-    path: 'home', component: HomeComponent, data: {
+    path: '', component: HomeComponent, data: {
       meta: {
-        page: 'Context example page',
-        title: 'Home',
+        page: 'Home Page - Learn to Surf in Bali',
+        title: 'learn to surf in bali',
         description: 'Discover the best surf spots in Bali, get surfing tips, and plan your ultimate surfing adventure in Indonesia.',
         metatags: 'Holy Surf Bali,surfing, Bali, surf spots, surf schools, wave riding, Indonesia',
       },
@@ -23,5 +23,5 @@ export const routes: Routes = [
   { path: 'surf-season', component: SurfingSeasonComponent, data: { title: 'Surfing Season' } },
   { path: 'gallery', component: GalleryComponent, data: { title: 'Gallery' } },
   { path: 'contact-us', component: ContactUsComponent, data: { title: 'About Us' } },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: '/' },
 ];
