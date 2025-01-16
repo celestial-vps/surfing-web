@@ -70,3 +70,10 @@
     padding: 10px;
   }
 
+
+  .div-accordion-box-ul{
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;    
+    padding:   var(--bs-accordion-body-padding-y) var(--bs-accordion-body-padding-x) 0 var(--bs-accordion-body-padding-x);
+  }
