@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { SurfingMethodComponent } from './surfing-method/surfing-method.component';
 import { SurfingSeasonComponent } from './surfing-season/surfing-season.component';
 import { OrderComponent } from './order/order.component';
+import { BatukarasComponent } from './retreat/batukaras/batukaras.component';
 
 export const routes: Routes = [
   // { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -21,6 +22,8 @@ export const routes: Routes = [
   { path: 'order', component: OrderComponent, data: { title: 'Order' } },
   { path: 'surf-method', component: SurfingMethodComponent, data: { title: 'Surfing Method' } },
   { path: 'surf-season', component: SurfingSeasonComponent, data: { title: 'Surfing Season' } },
+  { path: 'retreat-batukaras', component: BatukarasComponent, data: { title: 'Surfing Season' } },
+  
   { path: 'gallery', component: GalleryComponent, data: { title: 'Gallery' } },
   { path: 'contact-us', component: ContactUsComponent, data: { title: 'About Us' } },
   { path: '**', redirectTo: '/' },

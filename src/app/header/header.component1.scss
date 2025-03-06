@@ -1,0 +1,128 @@
+//=================================
+// Variables
+$bg-color: #fff;
+$basic-links-color: #222;
+$link-hover-color: #fff;
+$_cyan: #0F8B8D;
+$_ferrari-red: #F42B03;
+$_green: #62AB37;
+$_copper: #C46D5E;
+$_rosewood: #6B0504;
+$_cerise: #F00699;
+
+// Mixins
+@mixin position-absolute($top: null, $left: null, $right: null, $bottom: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+// Common Styles
+body {
+  background-color: $bg-color;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #00B6EC;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  position: relative;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #fff;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #00B6EC;
+  width: 200px;
+  top: 100%;
+  left: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  animation: slide-down 0.3s ease-in-out;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #0099cc;
+  border-radius: 4px;
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive styles
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+}
