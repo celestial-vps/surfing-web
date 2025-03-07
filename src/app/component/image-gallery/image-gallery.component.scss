@@ -4,6 +4,7 @@
   list-style: none;
 }
 
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.6;
@@ -32,6 +33,29 @@ li {
   font-size: 0.5;
   box-shadow: 2rem 2remm 2rem rgba($color: #000000, $alpha: 0.5);
   transition: all 1s ease-in-out;
+}
+
+li .details h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+li .details p {
+  width: 80%;
+  font-size: 1rem;
+}
+
+li .details button {
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+li:hover .details {
+  display: block;
 }
 
 li:nth-child(1),
@@ -75,6 +99,7 @@ li .details {
   color: white;
   font-size: 0.5rem;
   display: none;
+  transform: translateY(-50%);
 }
 
 li:nth-child(2) .details {
@@ -86,15 +111,15 @@ li:nth-child(2) .details {
 
 @keyframes identifier {
   from {
-      opacity: 0;
-      filter: blur(30px);
-      transform: scale(0);
+    opacity: 0;
+    filter: blur(30px);
+    transform: scale(0);
   }
 
   to {
-      opacity: 1;
-      filter: blur(30px);
-      transform: scale(0);
+    opacity: 1;
+    filter: blur(30px);
+    transform: scale(0);
   }
 }
 
@@ -121,10 +146,9 @@ li:nth-child(2) .details button {
   position: absolute;
   bottom: -6rem;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
   display: flex;
   gap: 1.5rem;
-
 }
 
 .controls button {
@@ -139,4 +163,93 @@ li:nth-child(2) .details button {
 
 .controls button:hover {
   background: coral;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 10rem;
+    height: 25rem;
+  }
+
+  li {
+    width: 12rem;
+    height: 10rem;
+  }
+
+  li .details h1 {
+    font-size: 1.5rem;
+  }
+
+  li .details p {
+    font-size: 0.8rem;
+  }
+
+  .controls button {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    width: 20rem;
+    height: 20rem;
+    top: 160%;
+  }
+
+  li {
+    width: 4rem;
+    height: 4rem;
+    top: 80%;
+  }
+
+  li .details h1 {
+    font-size: 0.2rem;
+  }
+
+  li .details p {
+    font-size: 0.1rem;
+  }
+
+  .controls button {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  li:nth-child(1),
+  li:nth-child(2) {
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  li:nth-child(1) {
+    box-shadow: none;
+  }
+
+  li:nth-child(3) {
+    left: 40%;
+  }
+
+  li:nth-child(4) {
+    left: calc(40% + 4.5rem);
+  }
+
+  li:nth-child(5) {
+    left: calc(40% + 9rem);
+  }
+
+  li:nth-child(6) {
+    left: calc(40% + 13.5rem);
+  }
+
+  li:nth-child(7) {
+    left: calc(40% + 20rem);
+    opacity: 0;
+  }
 }

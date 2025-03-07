@@ -47,7 +47,7 @@
 }
 
 .slider-wrapper .slide-button#next-slide {
-    top:2530px;
+    top: 2530px;
     right: 200px;
 }
 
@@ -137,4 +137,18 @@
         width: 20%;
     }
 
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {
+    .slider-wrapper .slide-button#prev-slide {
+        top: 3450px;
+        left: 0px;
+    }
+    
+    .slider-wrapper .slide-button#next-slide {
+        top: 3450px;
+        right: 0px;
+    }
 }
