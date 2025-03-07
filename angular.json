@@ -73,10 +73,10 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
-          // "options": {
-          //   "host": "0.0.0.0",  // Set this to allow external access
-          //   "port": 4200
-          // },
+          "options": {
+            "host": "0.0.0.0",  
+            "port": 4200
+          },
           "configurations": {
             "production": {
               "buildTarget": "surfing-web:build:production"

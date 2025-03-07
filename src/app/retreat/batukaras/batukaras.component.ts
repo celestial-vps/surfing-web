@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ImageGalleryComponent } from '../../component/image-gallery/image-gallery.component';
+import { ImageAccomodationComponent } from '../../component/image-accomodation/image-accomodation.component';
 
 @Component({
   selector: 'app-batukaras',
   standalone: true,
-  imports: [NgOptimizedImage,FontAwesomeModule,ImageGalleryComponent],
+  imports: [NgOptimizedImage,FontAwesomeModule,ImageGalleryComponent,ImageAccomodationComponent],
   templateUrl: './batukaras.component.html',
   styleUrl: './batukaras.component.scss'
 })
