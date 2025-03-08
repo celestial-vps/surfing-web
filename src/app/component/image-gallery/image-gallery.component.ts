@@ -1,5 +1,5 @@
 import { NgOptimizedImage } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,21 +9,40 @@ import { RouterLink } from '@angular/router';
     templateUrl: './image-gallery.component.html',
     styleUrl: './image-gallery.component.scss'
 })
-export class ImageGalleryComponent {
-  moveCard(direction: string) {
-    const menu = document.querySelector('menu');
-    const cardList = document.querySelectorAll('menu li');
+export class ImageGalleryComponent implements AfterViewInit {
     
-    if (cardList.length > 0) {
-      const firstCard = cardList[0];
-
-      if (direction === 'next') {
-        // Move the first card to the end of the list
-        menu?.appendChild(firstCard);
-      } else if (direction === 'prev') {
-        // Move the last card to the beginning of the list
-        menu?.prepend(cardList[cardList.length - 1]);
+    @ViewChild('imageList') imageListRef: ElementRef | undefined;
+    @ViewChild('prevButton') prevButtonRef: ElementRef | undefined;
+    @ViewChild('nextButton') nextButtonRef: ElementRef | undefined;
+    maxScrollLeft: number = 0;
+  
+    ngAfterViewInit() {
+      const imageList = this.imageListRef?.nativeElement;
+      const slideButtons = [this.prevButtonRef?.nativeElement, this.nextButtonRef?.nativeElement];
+  
+      if (imageList && slideButtons.every(button => button)) {
+        this.maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+  
+        slideButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            const direction = button.id === 'prev-slide-home' ? -1 : 1;
+            const scrollAmount = imageList.clientWidth * direction;
+            imageList.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          });
+        });
+  
+        imageList.addEventListener('scroll', () => this.handleSlideButtons(imageList));
+        this.handleSlideButtons(imageList); // Initial button visibility check
       }
     }
-  }
+  
+    handleSlideButtons(imageList: HTMLElement) {
+      const prevButton = this.prevButtonRef?.nativeElement;
+      const nextButton = this.nextButtonRef?.nativeElement;
+  
+      if (prevButton && nextButton) {
+        prevButton.style.display = imageList.scrollLeft <= 0 ? 'none' : 'block';
+        nextButton.style.display = imageList.scrollLeft >= this.maxScrollLeft ? 'none' : 'block';
+      }
+    }
 }
