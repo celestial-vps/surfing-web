@@ -1,12 +1,5 @@
-<div
-  class="navbar fixed navbar-expand-xl"
-  role="navigation"
-  style="background-color: #00B6EC"
->
-  <div
-    class="container-fluid my-2 menu-hover-effect"
-    style="justify-content: space-between"
-  >
+<div class="navbar fixed navbar-expand-xl" role="navigation" style="background-color: #00B6EC">
+  <div class="container-fluid my-2 menu-hover-effect" style="justify-content: space-between">
     <!-- <div class="row">
       <div class="col-md-12 text-center">
         <img ngSrc="../../assets/logo.png" width="80" height="50" alt="holy surf bali"/>
@@ -17,65 +10,38 @@
       
     </div> -->
 
-    <div class="row justify-content-center align-items-center" >
+    <div class="row justify-content-center align-items-center">
       <div class="col-auto text-center">
-        <img ngSrc="../../assets/logo.png" width="80" height="50" alt="Learn to surf in Bali"/>
+        <img ngSrc="../../assets/logo.png" width="80" height="50" alt="Learn to surf in Bali" />
       </div>
       <div class="col-auto text-center">
-        <p style="color: white; font-size: 1.5rem; font-weight: bold; padding-top: 4%; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); letter-spacing: 1px;">
+        <p
+          style="color: white; font-size: 1.5rem; font-weight: bold; padding-top: 4%; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); letter-spacing: 1px;">
           Holy Surf Bali
         </p>
       </div>
     </div>
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div
-      class="collapse navbar-collapse menu-hover-effect-1"
-      id="navbarSupportedContent"
-    >
-      <ul
-        class="navbar-nav me-auto mb-2 mb-lg-0"
-        style="width: 100%; justify-content: center"
-      >
+    <div class="collapse navbar-collapse menu-hover-effect-1" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 100%; justify-content: center">
         <li class="nav-item active">
-          <a
-            class="nav-link"
-            style="color: white; font-size: large"
-            routerLink="/"
-            (click)="closeNavbar()"
-            >Home<span class="sr-only"></span
-          ></a>
+          <a class="nav-link" style="color: white; font-size: large" routerLink="/" (click)="closeNavbar()">Home<span
+              class="sr-only"></span></a>
         </li>
         <li class="nav-item active">
-          <a
-            class="nav-link"
-            style="color: white; font-size: large"
-            routerLink="/surf-method"
-            (click)="closeNavbar()"
-            >Surf Coaching Method<span class="sr-only"></span
-          ></a>
+          <a class="nav-link" style="color: white; font-size: large" routerLink="/surf-method"
+            (click)="closeNavbar()">Surf Coaching Method<span class="sr-only"></span></a>
         </li>
         <li class="nav-item active">
-          <a
-            class="nav-link"
-            style="color: white; font-size: large"
-            routerLink="/surf-season"
-            (click)="closeNavbar()"
-            >Surf Session<span class="sr-only"></span
-          ></a>
+          <a class="nav-link" style="color: white; font-size: large" routerLink="/surf-season"
+            (click)="closeNavbar()">Surf Session<span class="sr-only"></span></a>
         </li>
-        <li class="nav-item active">
+        <!-- <li class="nav-item active">
           <a
             class="nav-link"
             style="color: white; font-size: large"
@@ -83,34 +49,28 @@
             (click)="closeNavbar()"
             >Batukaras<span class="sr-only"></span
           ></a>
-        </li>
-        <!-- <li class="nav-item dropdown">
-          <a
-            class="nav-link"
-            style="color: white; font-size: large"            
-            >Retreat</a>
-          <ul class="dropdown-menu">
-            <li><a   routerLink="/retreat-batukaras" class="dropdown-item" href="#">Batukaras</a></li>
-          </ul>
         </li> -->
-        <li class="nav-item active">
-          <a
-            class="nav-link"
-            style="color: white; font-size: large"
-            routerLink="/gallery"
-            (click)="closeNavbar()"
-            >Gallery<span class="sr-only"></span
-          ></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link" style="color: white; font-size: large">Retreat</a>
+          <ul class="dropdown-menu">
+            <div class="box-drowdown">
+              <li><a  (click)="closeNavbar()" routerLink="/retreat-batukaras" class="dropdown-item" href="#">Batukaras</a></li>
+            </div>
+            
+          </ul>
         </li>
         <li class="nav-item active">
-          <a
-            class="nav-link"
-            style="color: white; font-size: large"
-            routerLink="/contact-us"
-            (click)="closeNavbar()"
-            >About Us<span class="sr-only"></span
-          ></a>
+          <a class="nav-link" style="color: white; font-size: large" routerLink="/gallery"
+            (click)="closeNavbar()">Gallery<span class="sr-only"></span></a>
         </li>
+        <li class="nav-item active">
+          <a class="nav-link" style="color: white; font-size: large" routerLink="/contact-us"
+            (click)="closeNavbar()">About Us<span class="sr-only"></span></a>
+        </li>
+        <!-- <li class="nav-item active">
+          <a class="nav-link" style="color: white; font-size: large" routerLink="/test" (click)="closeNavbar()">Under
+            Contruction<span class="sr-only"></span></a>
+        </li> -->
       </ul>
     </div>
   </div>

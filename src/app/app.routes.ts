@@ -6,6 +6,7 @@ import { SurfingMethodComponent } from './surfing-method/surfing-method.componen
 import { SurfingSeasonComponent } from './surfing-season/surfing-season.component';
 import { OrderComponent } from './order/order.component';
 import { BatukarasComponent } from './retreat/batukaras/batukaras.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
   // { path: '', redirectTo: '/', pathMatch: 'full' },
@@ -26,5 +27,6 @@ export const routes: Routes = [
   
   { path: 'gallery', component: GalleryComponent, data: { title: 'Gallery' } },
   { path: 'contact-us', component: ContactUsComponent, data: { title: 'About Us' } },
-  { path: '**', redirectTo: '/' },
+  { path: '**', component: NotFoundComponent, data: { title: 'Page Not Found' } },
+  // { path: '**', redirectTo: '/' },
 ];
