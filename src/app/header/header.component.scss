@@ -327,9 +327,17 @@ body {
 }
 
 .navbar-toggler {
-  border: none;
-  background-color: transparent;
-  outline: none;
+  border: none !important;
+  background-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .navbar-toggler-icon {
